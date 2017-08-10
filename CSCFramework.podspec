@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.vendored_frameworks = "**/*.framework"
   # 系统的
-  s.frameworks = 'SystemConfiguration', 'CoreGraphics', 'UIKit', 'Foundation'
+  s.frameworks = 'SystemConfiguration', 'CoreGraphics', 'UIKit', 'Foundation', 'MobileCoreServices', 'Security'
+  s.dependency 'AFNetworking'
+  s.dependency 'GTMBase64'
 
 end
